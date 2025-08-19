@@ -2,6 +2,7 @@
 import '../styles/global.css';
 import Sidebar from '../components/Sidebar.astro';
 import Welcome from '../components/Welcome.astro';
+import MainView from '../components/MainView.astro';
 ---
 
 <html lang="en">
@@ -14,6 +15,6 @@ import Welcome from '../components/Welcome.astro';
   </head>
   <body class="flex flex-row">
     <Sidebar class="" />
-    <main class="flex-1 p-10"><slot /></main>
+    <MainView><slot /> </MainView>
   </body>
 </html>
