@@ -1,10 +1,30 @@
 ---
 import Layout from '../layouts/Layout.astro';
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-  <main></main>
+  <main>
+    <section class="relative flex py-48 flex-1 bg-[url('/images/art.png')] h-3/4 bg-cover bg-center ">
+      <div class="absolute inset-0 bg-black/65"></div> <!-- overlay -->
+      <div class ="relative z-10 flex flex-col items-start w-1/2 px-28 ">
+        <div class="flex items-center gap-4">
+          <img
+          class="rounded-full h-36"
+          src="https://avatars.githubusercontent.com/u/72462333?v=4"
+          alt="juan romo"
+        />
+          <h1 class="text-white text-5xl">Hey! I'm<br>
+            <span class="font-extrabold text-6xl"> Juan Romo</span></h1>
+
+      </div>
+      <h2 class="mt-4 text-xl text-white/90">
+            Software Engineer & Game Developer from Madrid, Spain.
+          </h2>
+      </div>
+      <div class ="flex w-[50%] ">
+        
+      </div>
+    </section>
+  </main>
 </Layout>
