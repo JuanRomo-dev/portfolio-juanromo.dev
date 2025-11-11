@@ -13,8 +13,8 @@ import MainView from '../components/MainView.astro';
     <meta name="generator" content={Astro.generator} />
     <title>Juan Romo Portfolio | Software Engineer & Game Developer</title>
   </head>
-  <body class="flex flex-row">
+  <body class="grid grid-cols-[auto_1fr] min-h-screen">
     <Sidebar class="" />
-    <MainView><slot /> </MainView>
+    <slot></slot>
   </body>
 </html>
